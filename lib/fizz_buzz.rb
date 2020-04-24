@@ -1,6 +1,6 @@
 def fizz_buzz(number)
   # TODO: return an array of integers, 'Fizz', 'Buzz' or 'FizzBuzz'
-  #raise() ArgumentError.new if number < 1
+  raise ArgumentError.new("Expected a positive value") if number < 1
 
   array = (1..number).to_a
   array.map do |nr|
@@ -16,4 +16,4 @@ def fizz_buzz(number)
   end
 end
 
-puts fizz_buzz(25)
+#puts fizz_buzz(1)
